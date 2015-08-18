@@ -240,7 +240,7 @@ xts_index <- function (xts_in) {
 reload_duneR <- function () {
     # Convenience function to reload duneR during development (remove later!)
     original_dir <- getwd()
-    setwd ('C:/Users/tom/Dropbox/R/duneR')
+    setwd ('C:/Users/tom/Dropbox/R/duneR2')
     source ('duneR.R')
     setwd (original_dir)
 }

@@ -95,7 +95,7 @@ calc_u_star_t_shao_lu <- function (d, rho_sed, rho_air) {
     rho_sed <- as.vector (rho_sed)
     rho_air <- as.vector (rho_air)
     
-    u_star_t <- sqrt (A_n * ((rho_sed * g * d) + (gma / (rho_air * d))))
+    u_star_t <- sqrt (A_n * ((rho_sed/rho_air) * g * d) + (gma / (rho_air * d)))
     return (u_star_t)
 }
 
