@@ -156,17 +156,6 @@ calc_mean_wind_dir <- function (u, v, convention) {
     return (direction)
 }
 
-calc_turb_metrics <- function (u, v, w, temp) {
-    # Function to calculate turbulence metrics from a timeseries of fine
-    # scale wind measurements.
-
-
-
-
-    turb_metrics <- 0.0
-    return (turb_metrics)
-}
-
 calc_air_density <- function (pressure, kelvin_temp, xts_interpolate) {
     # Function to calculate the air density from pressure and air temperature.
     
