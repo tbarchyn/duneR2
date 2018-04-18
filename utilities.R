@@ -63,7 +63,7 @@ uvw_to_scalar <- function (u, v, w, convention) {
     
         if (length(w[w != 0.0]) > 0) {
             # calculate 3D wind speed
-            wind_speed <- sqrt (sqrt (u^2 + v^2) + w^2)
+            wind_speed <- sqrt (u^2 + v^2 + w^2)
             
             # calculate altitude, positive when wind is coming from below
             altitude <- atan ((w / sqrt(u^2 + v^2))) * (180.0 / pi)
@@ -90,7 +90,7 @@ uvw_to_scalar <- function (u, v, w, convention) {
         
         if (length(w[w != 0.0]) > 0) {
             # calculate 3D wind speed
-            wind_speed <- sqrt (sqrt (u^2 + v^2) + w^2)
+            wind_speed <- sqrt (u^2 + v^2 + w^2)
             
             # calculate altitude, positive when wind is coming from below
             altitude <- atan ((w / sqrt(u^2 + v^2))) * (180.0 / pi)
